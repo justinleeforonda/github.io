@@ -1,0 +1,67 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Front end workshop">
+
+        <style>
+            .employment-history-item {
+                display: flex;
+                margin-bottom: 20px;
+            }
+            
+            
+            .employment-history-item .-body {
+                margin-left: 20px;
+                padding: 10px 15px;
+                max-width: 500px;
+            }
+            
+            .sub-heading {
+                font-weight: bold;
+                display: block;
+                color: #9e9e9e;
+            }
+
+            @media all and (max-width: 479px) {
+                .employment-history-item {
+                    margin: 0px 20px 20px 20px;
+                }
+                
+                .employment-history-item img.-circle-sm {
+                    display: none;
+
+                }
+
+                .employment-history-item .-body {
+                    margin: 0px;
+                }
+            }
+            
+        </style>
+        
+        <link rel="stylesheet" href="assets/css/style.css">
+    </head>
+
+    <body>
+            <article class="employment-history-item">
+                    <img src="https://avatars0.githubusercontent.com/u/13983894?s=280&v=4" alt="Company Logo" class="-circle-sm">
+                    <div class="-body shadowed">
+                        <h4>Trend Micro</h4>
+                        <strong>Role: Cloud Operations Engineer</strong>
+                        <span class="sub-heading">July 2018 - Present</span>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam quaerat et saepe suscipit cupiditate nesciunt magnam explicabo, possimus, facere nulla dolor cum unde ut officiis quasi mollitia culpa incidunt inventore.</p>
+                    </div>
+                </article>
+                
+                <article class="employment-history-item">
+                        <img src="https://is4-ssl.mzstatic.com/image/thumb/Purple3/v4/9f/3f/10/9f3f1099-6b33-9154-07d8-28603b41df2b/source/256x256bb.jpg" alt="Company Logo" class="-circle-sm">
+                        <div class="-body shadowed">
+                            <h4>Texas Instruments</h4>
+                            <strong>Role: Network Administrator</strong>
+                            <span class="sub-heading">April 2017 - March 2018</span>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus impedit fugiat magni, dolor temporibus nemo expedita ratione incidunt exercitationem sapiente facilis, nesciunt vitae reprehenderit voluptate corrupti sunt aspernatur numquam. Quo?</p>
+                        </div>
+                    </article>
+    </body>
+</html>
+
