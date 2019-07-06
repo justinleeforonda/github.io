@@ -3,45 +3,98 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="assets/css/style.css">
 
-        <style>
-            .main-screen {
-                width: 100%;
-                height: 100vh;
-                display: flex;
-                flex-direction: row;
-            }
-
-            .hero-title {
-                font-weight: 500;
-                font-size: 65px;
-            }
-
-            .main-screen .-content {
-                padding: 120px 75px;
-                flex-grow: 1;
-            }
-
-            .main-screen .-content,
-            .main-screen .-right-image-container img {
-                height: 100%px;
-            }
-
-        </style>
-
     </head>
-    <body>
+    <body class="fade-in-right">
         <section class="main-screen">
             <div class="-content">
                 <span class="hero-title">
                     Hi!
                     <div>I'm Justin</div>
                 </span>
+                <div>
+                        <a target="_blank" href="https://www.facebook.com/juztin.lee">
+                            <img src="assets/img/svg/facebook.svg" alt="Facebook Profile Link">
+                        </a>
+                        
+                        <a target="_blank" href="https://www.linkedin.com/in/justinleeforonda/">
+                            <img src="assets/img/svg/linkedin.svg" alt="LinkedIn Profile Link">
+                        </a>
+                        
+                        <a target="_blank" href="https://github.com/justinleeforonda">
+                            <img src="assets/img/svg/github.svg" alt="GitHub Link">
+                        </a>
+                        
+                </div>
                     <p>Developer Trainee</p>
+                <div class="call-to-action-container">
+                        <a class="call-to-action" href="assets/others/cv.docx">
+                            Download my CV
+                        </a>
+                </div>
             </div>
             <div class="-right-image-container">
                 <img src="assets/img/portrait.png" alt="Justin Lee Foronda's Image">
             </div>
         </section>
         
+        <section class="recommendations-screen">
+            <h1>Testimonials About Me</h1>
+                <div class="grid-container">
+                        <div class="row">
+                            <div class="col">
+                                    <article class="recommendation">
+                                            <img class="-circle" src="https://randomuser.me/api/portraits/lego/3.jpg" alt="Profile image">
+                                            <div class="-body shadowed white-box">
+                                                <span class="-name">Random User</span>
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos culpa atque mollitia quaerat ipsam eaque, pariatur eveniet est nam aperiam consectetur recusandae quo. Vitae totam temporibus, amet quaerat natus laborum.</p>
+                                            </div>
+                                        </article>
+                            </div>
+                            <div class="col">
+                                    <article class="recommendation">
+                                            <img class="-circle" src="https://randomuser.me/api/portraits/lego/2.jpg" alt="Profile image">
+                                            <div class="-body shadowed white-box">
+                                                <span class="-name">Bob</span>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est eum a totam error, earum provident fuga explicabo suscipit voluptatum laborum! Aperiam sapiente nisi a quos delectus? Ipsa cupiditate optio deleniti.</p>
+                                            </div>
+                                        </article>
+                            </div>
+                            <div class="col">
+                                    <article class="recommendation">
+                                            <img class="-circle" src="https://randomuser.me/api/portraits/lego/6.jpg" alt="Profile image">
+                                            <div class="-body shadowed white-box">
+                                                <span class="-name">John Doe</span>
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam animi sint, placeat odio sapiente unde eligendi quibusdam cum obcaecati laborum molestias facere natus culpa delectus magnam neque, hic odit? Molestiae?</p>
+                                            </div>
+                                        </article>
+                            </div>
+                        </div>
+                    </div>
+        </section>
+
+        <section class="employment-history">
+            <h1>My Employment History</h1>
+
+            <article class="employment-history-item">
+                    <img src="https://avatars0.githubusercontent.com/u/13983894?s=280&v=4" alt="Company Logo" class="-circle-sm">
+                    <div class="-body shadowed white-box">
+                        <h4>Trend Micro</h4>
+                        <strong>Role: Cloud Operations Engineer</strong>
+                        <span class="sub-heading">July 2018 - Present</span>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam quaerat et saepe suscipit cupiditate nesciunt magnam explicabo, possimus, facere nulla dolor cum unde ut officiis quasi mollitia culpa incidunt inventore.</p>
+                    </div>
+                </article>
+                
+                <article class="employment-history-item">
+                        <img src="https://is4-ssl.mzstatic.com/image/thumb/Purple3/v4/9f/3f/10/9f3f1099-6b33-9154-07d8-28603b41df2b/source/256x256bb.jpg" alt="Company Logo" class="-circle-sm">
+                        <div class="-body shadowed white-box" >
+                            <h4>Texas Instruments</h4>
+                            <strong>Role: Network Administrator</strong>
+                            <span class="sub-heading">April 2017 - March 2018</span>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus impedit fugiat magni, dolor temporibus nemo expedita ratione incidunt exercitationem sapiente facilis, nesciunt vitae reprehenderit voluptate corrupti sunt aspernatur numquam. Quo?</p>
+                        </div>
+                    </article>
+
+        </section>
     </body>
 </html>

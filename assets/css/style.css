@@ -1,6 +1,7 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #414141;
+    background-color: #f2f3f7;
 }
 
 img.-circle {
@@ -19,3 +20,202 @@ img.-circle-sm {
     box-shadow: 0px 0px 24px -10px #414141;
 }
 
+.white-box {
+    background-color: white;
+}
+
+/* Main Screen Style */
+.main-screen {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+}
+
+.hero-title {
+    font-weight: 500;
+    font-size: 65px;
+}
+
+.main-screen .-content {
+    padding: 120px 75px;
+    flex-grow: 1;
+}
+
+.main-screen .-content,
+.main-screen .-right-image-container img {
+    height: 100%px;
+}
+
+@media (max-width: 600px) {
+    .main-screen .-right-image-container {
+        display: none;
+    }
+
+    .hero-title {
+        font-weight: 400;
+        font-size: 45px;
+    }
+
+    .main-screen .-content {
+        text-align: center;
+        padding: 60px 30px;
+    }
+}
+
+
+
+/* End of Main Screen Styles */
+
+/* Call to Action style */
+.call-to-action-container {
+    margin-top: 28px;
+}
+
+.call-to-action {
+    padding: 12px 18px;
+    font-size: 24px;
+    background-color: #121212;
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+/* End of Call to Action style  */
+
+/* Recommendation Screen style  */
+
+.box {
+    background-color: grey;
+    width: 100%;
+    min-height: 100px;
+}
+
+.grid-container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.grid-container .row {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+
+}
+
+.grid-container .row .col {
+    flex-basis: 33.33%;
+    padding: 10px;
+    box-sizing: border-box;
+    width: 259px;
+}
+
+@media (max-width: 1440px) {
+    .grid-container .row .col {
+    flex-basis: 33.33%;
+    }
+}
+
+@media (max-width: 599px) {
+    .grid-container .row .col {
+    flex-basis: 100%;
+    }
+}
+
+/* End of Recommendation Screen style  */
+
+/* Testimonial Style  */
+
+.recommendation {
+    display: flex;
+    flex-direction: column;
+}
+
+.recommendation > * {
+    margin: auto;
+}
+
+
+.recommendation .-name {
+    font-weight: bold;
+    color: #BBBBBB;
+}
+
+.recommendation .-body {
+    padding: 24px;
+    padding-top: 88px;
+    margin-top: -64px;
+    
+}
+
+.recommendation img.-circle {
+    z-index: 100;
+}
+
+/* End of Testimonial Style  */
+
+/* Employment History Styles  */
+
+.employment-history {
+    display: flex;
+    flex-direction: column;
+}
+
+.employment-history > * {
+    margin: auto;
+}
+
+.employment-history h1 {
+    margin-bottom: 38px;
+}
+
+.employment-history-item {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+
+.employment-history-item .-body {
+    margin-left: 20px;
+    padding: 10px 15px;
+    max-width: 500px;
+}
+
+.sub-heading {
+    font-weight: bold;
+    display: block;
+    color: #9e9e9e;
+}
+
+@media all and (max-width: 479px) {
+    .employment-history-item {
+        margin: 0px 20px 20px 20px;
+    }
+    
+    .employment-history-item img.-circle-sm {
+        display: none;
+
+    }
+
+    .employment-history-item .-body {
+        margin: 0px;
+    }
+}
+
+/* End of Employment History Styles */
+
+.fade-in-right {
+    animation-duration: 1s;
+    animation-name: fadeInRight;
+}
+
+@keyframes fadeInRight {
+    0% {
+        Opacity: 0;
+        transform: translate(40px);
+    }
+
+    100% {
+        Opacity: 1;
+        transform: translate(0);
+    }
+}
