@@ -1,0 +1,54 @@
+<style>
+    body {
+        background-color: white;
+    }
+</style>
+
+<style>
+    img.-circle {
+        width: 128px;
+        height: 128px;
+        border-radius: 64px;
+    }
+
+    .shadowed{
+        box-shadow: 0px 0px 24px -10px #414141;
+    }
+</style>
+
+<style>
+    .recommendation {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .recommendation > * {
+        margin: auto;
+    }
+
+
+    .recommendation .-name {
+        font-weight: bold;
+        color: #BBBBBB;
+    }
+
+    .recommendation .-body {
+        padding: 24px;
+        padding-top: 88px;
+        margin-top: -64px;
+        
+    }
+
+    .recommendation img.-circle {
+        z-index: 100;
+    }
+
+</style>
+
+<article class="recommendation">
+    <img class="-circle" src="https://randomuser.me/api/portraits/lego/3.jpg" alt="Profile image">
+    <div class="-body shadowed">
+        <span class="-name">Random User</span>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est eum a totam error, earum provident fuga explicabo suscipit voluptatum laborum! Aperiam sapiente nisi a quos delectus? Ipsa cupiditate optio deleniti.</p>
+    </div>
+</article>
